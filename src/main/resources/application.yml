@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.85.128:3306/mmall?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-enums-package: com.wy.enums
+  mapper-locations: com/wy/mapper/xml/*.xml
+server:
+  port: 8181
